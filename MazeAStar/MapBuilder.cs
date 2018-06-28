@@ -6,13 +6,7 @@ namespace MazeAStar
 {
     class MapBuilder
     {
-
-        public MapBuilder()
-        {
-            
-        }
-
-        private bool[][] mazePattern()
+        public static bool[][] BuildMazePattern()
         {
             return new[]
             {
@@ -20,7 +14,9 @@ namespace MazeAStar
                 new[]{false,false,true,false,false},
                 new[]{false,false,true,false,false},
                 new[]{false,true,true,false,false},
-                new[]{false,true,false,false,false}
+                new[]{false,true,false,false,false},
+                new[]{false,true,true,true,false},
+                new[]{false,false,false,true,false}
             };
         }
     }

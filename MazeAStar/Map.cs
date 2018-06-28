@@ -6,15 +6,15 @@ namespace MazeAStar
 {
     class Map
     {
+        bool[][] maze = MapBuilder.BuildMazePattern();
+
         public Map()
         {
-            MapBuilder map = new MapBuilder();
-            MapRenderer mapRend = new MapRenderer(this);
+            MapRenderer.UpdateMap(this);
         }
 
-        public bool [][] GetMazePattern()
-        {
 
-        }
+
+        public bool[][] Maze { get => maze; private set => maze = value; }
     }
 }

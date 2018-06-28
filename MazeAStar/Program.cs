@@ -6,7 +6,7 @@ namespace MazeAStar
     {
         static void Main(string[] args)
         {
-            
+            Map game = new Map();
         }
     }
 }
