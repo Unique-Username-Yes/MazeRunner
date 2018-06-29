@@ -8,16 +8,20 @@ namespace MazeAStar
     {
         public static bool[][] BuildMazePattern()
         {
+            
             return new[]
             {
                 new[]{true,true,true,false,false},
                 new[]{false,false,true,false,false},
                 new[]{false,false,true,false,false},
                 new[]{false,true,true,false,false},
-                new[]{false,true,false,false,false},
-                new[]{false,true,true,true,false},
-                new[]{false,false,false,true,false}
+                new[]{false,true,false,false,false}
             };
+        }
+
+        public static int[] SpawnPoint()
+        {
+            return new int[] { 0, 0 };
         }
     }
 }
